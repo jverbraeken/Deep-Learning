@@ -17,9 +17,9 @@ _CODE_TRAIN_DATASETS = [
 ]
 _CODE_EVAL_DATASETS = [
     [
-        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/valid.tgz?raw=true",
-        ("valid/valid.cd",
-        "valid/valid.en")
+        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/test.tgz?raw=true",
+        ("test/test.cd",
+        "test/test.en")
     ],
 ]
 
