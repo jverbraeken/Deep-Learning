@@ -27,13 +27,12 @@ def _is_valid_data(line: Dict) -> bool:
            '<!-- begin-user-doc --> <!-- end-user-doc -->' != line["nl"]
 
 
-def get_data_as_lists() -> Tuple[Tuple[List, List], Tuple[List, List], Tuple[List, List]]:
+def get_data_as_lists() -> Tuple[Tuple[List, List], Tuple[List, List]]:
     """
     :return: train, test, validation. Formatted like (list of codes, list of correct comments)
     """
     data = parse_data()
     train = ([], [])
-    test = ([], [])
     validation = ([], [])
     for line in data[0]:
         if _is_valid_data(line):
@@ -41,12 +40,12 @@ def get_data_as_lists() -> Tuple[Tuple[List, List], Tuple[List, List], Tuple[Lis
             train[1].append(line["nl"])
     for line in data[1]:
         if _is_valid_data(line):
-            test[0].append(line["code"])
-            test[1].append(line["nl"])
+            train[0].append(line["code"])
+            train[1].append(line["nl"])
     for line in data[2]:
         if _is_valid_data(line):
             validation[0].append(line["code"])
             validation[1].append(line["nl"])
-    return train, test, validation
+    return train, validation
 
 get_data_as_lists()
