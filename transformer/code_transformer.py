@@ -27,6 +27,7 @@ _CODE_EVAL_DATASETS = [
 class CodeTransformer(translate.TranslateProblem):
     """Translate from Java code to English"""
 
+    # We should check if this value holds for our problem!
     @property
     def approx_vocab_size(self):
         return 2**13
@@ -38,6 +39,6 @@ class CodeTransformer(translate.TranslateProblem):
     
     def source_data_files(self, dataset_split):
         train = dataset_split == problem.DatasetSplit == problem.DatasetSplit.TRAIN
-        train_datasets = CODE_TRAIN_DATASETS + self.additional_training_datasets
+        train_datasets = _CODE_TRAIN_DATASETS + self.additional_training_datasets
         return train_datasets if train else _CODE_EVAL_DATASETS
     
