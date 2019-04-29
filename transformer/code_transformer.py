@@ -38,7 +38,7 @@ class CodeTransformer(translate.TranslateProblem):
         return []
     
     def source_data_files(self, dataset_split):
-        train = dataset_split == problem.DatasetSplit == problem.DatasetSplit.TRAIN
-        train_datasets = _CODE_TRAIN_DATASETS + self.additional_training_datasets
-        return train_datasets if train else _CODE_EVAL_DATASETS
+        train = dataset_split == problem.DatasetSplit.TRAIN
+    	train_datasets = _CODE_TRAIN_DATASETS + self.additional_training_datasets
+    	return train_datasets if train else _CODE_EVAL_DATASETS
     
