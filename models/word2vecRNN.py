@@ -6,15 +6,14 @@ from keras.optimizers import Adam
 from keras.preprocessing.text import text_to_word_sequence, one_hot
 
 
-model = Sequential()
 
+model = Sequential()
 
 x = get_data_as_lists()[0][0]
 y = get_data_as_lists()[0][1]
 
 x_test = get_data_as_lists()[1][0]
 y_test = get_data_as_lists()[1][1]
-
 
 simple_rnn_params = {"units": 10, "activation": 'tanh', "use_bias": True, "kernel_initializer": 'glorot_uniform',
                      "recurrent_initializer": 'orthogonal', "bias_initializer": 'zeros', "kernel_regularizer": None,
@@ -32,21 +31,14 @@ adam_params = {"lr": 0.001, "beta_1": 0.9, "beta_2": 0.999, "epsilon": None, "de
 
 train_params = {"epochs": 1, "batch_size": 8}
 
-
-model.add(convert_to_keras_embeddings(x, load_from_file="../embeddings/train_comment.model"))
+model.add(convert_to_keras_embeddings(x))
 model.add(SimpleRNN(**simple_rnn_params))
 model.add(Dense(**dense_parameters))
 
 adam = Adam(**adam_params)
 model.compile(loss='mean_squared_error', optimizer=adam)
 
-
-
-
 tokenized_x = [text_to_word_sequence(sequence) for sequence in x]
-# tokenized_y = [text_to_word_sequence(sequence) for sequence in y]
-
-
 tokenized_y = [one_hot(sequence, 50000) for sequence in y]
 
 model.fit(tokenized_x, tokenized_y, **train_params)

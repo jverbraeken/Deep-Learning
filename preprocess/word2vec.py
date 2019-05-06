@@ -26,7 +26,7 @@ def create_code_embedding(save=True):
     code_data = get_data_as_lists()[0][0]
     embedding = _create_embeddings(code_data)
     if(save):
-        embedding.save("../embeddings/train_code.model")
+        embedding.save("embeddings/train_code.model")
     return embedding
 
 
@@ -34,7 +34,7 @@ def create_comment_embedding(save=True):
     comment_data = get_data_as_lists()[0][1]
     embedding = _create_embeddings(comment_data)
     if(save):
-        embedding.save("../embeddings/train_comment.model")
+        embedding.save("embeddings/train_comment.model")
     return embedding
 
 

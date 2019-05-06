@@ -2,7 +2,7 @@ import json
 from os import path
 from typing import Tuple, List, Dict
 
-PATH_ROOT = "../data"
+PATH_ROOT = "data"
 PATH_TRAIN = path.join(PATH_ROOT, "train.json")
 PATH_TEST = path.join(PATH_ROOT, "test.json")
 PATH_VALIDATION = path.join(PATH_ROOT, "valid.json")
