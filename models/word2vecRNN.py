@@ -36,7 +36,7 @@ tensorboard_cb = TensorBoard(log_dir='./Graph', histogram_freq=0,
           write_graph=True, write_images=True)
 train_params = {"epochs": 1, "batch_size": 8, "callbacks": [tensorboard_cb]}
 
-model.add(convert_to_keras_embeddings(x))
+model.add(convert_to_keras_embeddings(x, load_from_file="embeddings/train_code.model"))
 model.add(SimpleRNN(**simple_rnn_params))
 model.add(Dense(**dense_parameters))
 
