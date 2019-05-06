@@ -4,6 +4,8 @@ from keras import Sequential
 from keras.layers import SimpleRNN, Dense
 from keras.optimizers import Adam
 from keras.preprocessing.text import text_to_word_sequence, one_hot
+from keras.callbacks import TensorBoard
+
 
 
 
@@ -30,7 +32,7 @@ dense_parameters = {"units": 50000, "activation": None, "use_bias": True, "kerne
 adam_params = {"lr": 0.001, "beta_1": 0.9, "beta_2": 0.999, "epsilon": None, "decay": 0.0, "amsgrad": False}
 
 
-tensorboard_cb = keras.callbacks.TensorBoard(log_dir='./Graph', histogram_freq=0,  
+tensorboard_cb = TensorBoard(log_dir='./Graph', histogram_freq=0,  
           write_graph=True, write_images=True)
 train_params = {"epochs": 1, "batch_size": 8, "callbacks": [tensorboard_cb]}
 
