@@ -29,7 +29,10 @@ dense_parameters = {"units": 50000, "activation": None, "use_bias": True, "kerne
 
 adam_params = {"lr": 0.001, "beta_1": 0.9, "beta_2": 0.999, "epsilon": None, "decay": 0.0, "amsgrad": False}
 
-train_params = {"epochs": 1, "batch_size": 8}
+
+tensorboard_cb = keras.callbacks.TensorBoard(log_dir='./Graph', histogram_freq=0,  
+          write_graph=True, write_images=True)
+train_params = {"epochs": 1, "batch_size": 8, "callbacks": [tensorboard_cb]}
 
 model.add(convert_to_keras_embeddings(x))
 model.add(SimpleRNN(**simple_rnn_params))
@@ -40,7 +43,6 @@ model.compile(loss='mean_squared_error', optimizer=adam)
 
 tokenized_x = [text_to_word_sequence(sequence) for sequence in x]
 tokenized_y = [one_hot(sequence, 50000) for sequence in y]
-
 model.fit(tokenized_x, tokenized_y, **train_params)
 
 score = model.evaluate(x_test, y_test, batch_size=32)
