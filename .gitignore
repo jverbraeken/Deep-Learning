@@ -109,6 +109,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-data/test.json
-data/train.json
-data/valid.json
