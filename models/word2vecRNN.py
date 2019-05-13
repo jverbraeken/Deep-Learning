@@ -5,6 +5,7 @@ from keras.layers import SimpleRNN, Dense
 from keras.optimizers import Adam
 from keras.preprocessing.text import text_to_word_sequence, one_hot
 from keras.callbacks import TensorBoard
+from keras.utils import to_categorical
 import numpy as np
 from gensim.corpora import Dictionary
 
@@ -41,28 +42,31 @@ model.add(SimpleRNN(**simple_rnn_params))
 model.add(Dense(**dense_parameters))
 
 adam = Adam(**adam_params)
-model.compile(loss='mean_squared_error', optimizer=adam)
+model.compile(loss='sparse_categorical_crossentropy', optimizer=adam)
 
 print("model compiled")
 
 
-# tokenized_y = [text_to_word_sequence(sequence) for sequence in y]
-# word_dic = Dictionary(documents=tokenized_y, prune_at=2000000)
-# word_dic.filter_extremes(no_below=10, no_above=0.5, keep_n=50000)
-#
-# y_indices = [word_dic.doc2idx(sequence.lower().split(), unknown_word_index=0) for sequence in y]
+tokenized_y = [text_to_word_sequence(sequence) for sequence in y]
+word_dic = Dictionary(documents=tokenized_y, prune_at=2000000)
+word_dic.filter_extremes(no_below=10, no_above=0.5, keep_n=50000)
+word_dic.compactify()
+
+print("encoding y to one-hots")
+y_onehot = np.array([word_dic.doc2idx(sequence.lower().split(), unknown_word_index=0) for sequence in y])
+print("encoding y to one-hots done")
+
 #
 # len(word_dic)
-tokenized_y = [one_hot(sequence, 50000) for sequence in y]
+# tokenized_y = [one_hot(sequence, 50000) for sequence in y]
 tokenized_x = np.array([text_to_word_sequence(sequence) for sequence in x])
-
-
+print("tokenizing x done")
 # targets = np.array(tokenized_y).reshape(-1)
 # one_hot_targets = np.eye(50000)[targets]
 
 
 
-model.fit(tokenized_x, tokenized_y, **train_params)
+model.fit(tokenized_x, y_onehot, **train_params)
 print("model fitted")
 
 
