@@ -38,11 +38,13 @@ def create_comment_embedding(save=True):
     return embedding
 
 
-def convert_to_keras_embeddings(corpus, wv=None, load_from_file=""):
+def convert_to_keras_embeddings(corpus, wv=None, load_from_file="", max_sequence_length=1000):
     if(len(load_from_file)>0):
         wv = gensim.models.KeyedVectors.load(load_from_file, mmap='r')
     elif(wv is None):
         wv = _create_embeddings(corpus)
         print("created embedding for corpus")
 
-    return wv.get_keras_embedding(False)
+    layer = wv.get_keras_embedding(False)
+    layer.input_length = max_sequence_length
+    return layer
