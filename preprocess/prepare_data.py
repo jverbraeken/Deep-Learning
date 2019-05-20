@@ -2,7 +2,7 @@
 import json
 from os import path
 
-from preprocess import parser
+import parser
 
 filenames = ["train.json", "test.json", "valid.json"]
 for filename in filenames:
