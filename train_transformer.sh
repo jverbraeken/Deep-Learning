@@ -1,2 +1,0 @@
-#!/bin/bash
-t2t-trainer --generate_data --t2t_usr_dir=./transformer --data_dir=$HOME/t2t_data --output_dir=$HOME/t2t_train/code --problem=code_transformer --model=transformer --hparams_set=transformer_base_single_gpu
