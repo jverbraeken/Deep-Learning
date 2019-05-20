@@ -7,23 +7,22 @@ from preprocess import parser
 filenames = ["train.json", "test.json", "valid.json"]
 for filename in filenames:
     with open(path.join("../data/original", filename)) as file:
-        newlines = ["["]
+        validated_lines = ["["]
+        preprocessed_lines = ["["]
         for line in file:
-            newlines.append(line[:-1] + ",")
-        newlines[-1] = newlines[-1][:-1]
-        newlines.append("]")
+            validated_lines.append(line[:-1] + ",")
+            json_line = json.loads(line[:-1])
+            if parser.is_valid_data(json_line):
+                code = json_line["code"]
+                comment = parser.beautify(json_line["nl"])
+                preprocessed_lines.append(json.dumps({"code": code, "nl": comment}) + ",")
+        validated_lines[-1] = validated_lines[-1][:-1]
+        validated_lines.append("]")
+        preprocessed_lines[-1] = preprocessed_lines[-1][:-1]
+        preprocessed_lines.append("]")
     with open(path.join("../data/original_validated", filename), "w") as file2:
-        for line in newlines:
+        for line in validated_lines:
             file2.write("%s\n" % line)
-
-    with open(path.join("../data/original", filename)) as file:
-        newlines = file.readlines()
-    with open(path.join("../data/preprocessed", filename), "w") as file:
-        file.write("[\n")
-        for line in newlines:
-            line = json.loads(line)
-            if parser.is_valid_data(line):
-                code = line["code"]
-                comment = parser.beautify(line["nl"])
-                file.write("%s,\n" % json.dumps({"code": code, "nl": comment}))
-        file.write("]")
+    with open(path.join("../data/preprocessed", filename), "w") as file3:
+        for line in preprocessed_lines:
+            file3.write("%s\n" % line)
