@@ -29,13 +29,13 @@ def raw(text):
         except KeyError: new_string+=char
     return new_string
 
-with open('data/train.json', encoding='utf-8') as fh:
+with open('data/preprocessed/train.json', encoding='utf-8') as fh:
     train = json.load(fh)
 
-with open('data/test.json', encoding='utf-8') as fh:
+with open('data/preprocessed/test.json', encoding='utf-8') as fh:
     test = json.load(fh)
 
-with open('data/valid.json', encoding='utf-8') as fh:
+with open('data/preprocessed/valid.json', encoding='utf-8') as fh:
     valid = json.load(fh)
 
 with open('transformer_data/train/train.cd', 'w+') as fw:
