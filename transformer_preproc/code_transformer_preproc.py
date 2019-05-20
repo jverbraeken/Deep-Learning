@@ -10,14 +10,14 @@ from tensor2tensor.utils import registry
 
 _CODE_TRAIN_DATASETS = [
     [
-        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/train.tgz?raw=true",
+        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/train_preproc.tgz?raw=true",
         ("train/train.cd",
         "train/train.en")
     ],
 ]
 _CODE_EVAL_DATASETS = [
     [
-        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/test.tgz?raw=true",
+        "https://github.com/jverbraeken/Deep-Learning/blob/master/transformer_data/test_preproc.tgz?raw=true",
         ("test/test.cd",
         "test/test.en")
     ],
