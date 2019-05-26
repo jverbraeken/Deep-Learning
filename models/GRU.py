@@ -20,4 +20,5 @@ model.add(keras.layers.GRU(**gru_params))
 model.add(keras.layers.Dense(**dense_parameters))
 
 adam = keras.optimizers.Adam(**adam_params)
-model.compile(loss='mean_squared_error', optimizer=adam) 
+model.compile(loss='mean_squared_error', optimizer=adam)
+print("model compiled")
