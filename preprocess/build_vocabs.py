@@ -73,14 +73,14 @@ def encode_sequences(code_vocab, comment_vocab, data_x, data_y, max_seq_length_c
     encoded_x = np.array([code_vocab.doc2idx(sequence, unknown_word_index=0) for sequence in data_x])
     encoded_y = np.array([comment_vocab.doc2idx(sequence, unknown_word_index=0) for sequence in data_y])
 
-    decoder_target_data = np.zeros((len(encoded_y), max_seq_length_comment, 1), dtype=np.int16)
+    decoder_target_data = np.zeros((len(encoded_y), max_seq_length_comment), dtype=np.int32)
     comment_ix_map = comment_vocab.token2id
 
     for i, sentence in enumerate(data_y):
         for t, word in enumerate(sentence):
             if t > 0:
                 word_ix = comment_ix_map[word] if (word in comment_ix_map) else len(comment_vocab)
-                decoder_target_data[i, t - 1, 0] = word_ix
+                decoder_target_data[i, t - 1] = word_ix
 
     return encoded_x, encoded_y, decoder_target_data
 
@@ -109,13 +109,15 @@ def get_embedding_layers(data_train, max_seq_length_code=100, max_seq_length_com
                                      weights_code.shape[1],
                                      weights=[weights_code],
                                      input_length=max_seq_length_code,
-                                     trainable=False)
+                                     trainable=False,
+                                     mask_zero=True)
 
     embedding_layer_comment = Embedding(weights_comment.shape[0],
                                         weights_comment.shape[1],
                                         weights=[weights_comment],
                                         input_length=max_seq_length_comment,
-                                        trainable=False)
+                                        trainable=False,
+                                        mask_zero=True)
 
     return embedding_layer_code, embedding_layer_comment, code_vocab, comment_vocab
 

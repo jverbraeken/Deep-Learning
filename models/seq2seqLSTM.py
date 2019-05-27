@@ -1,11 +1,40 @@
 embedding_size = 50
- from keras.layers import Input, LSTM, Dense, Dropout, BatchNormalization
-from keras.losses import sparse_categorical_crossentropy
+import tensorflow as tf
+from keras.callbacks import ModelCheckpoint, TensorBoard
+from keras.layers import Input, LSTM, Dense, BatchNormalization
 from keras.models import Model
 from keras.optimizers import Adam
 from tensorflow.keras.metrics import sparse_categorical_accuracy
 
 from preprocess.build_vocabs import get_embedding_layers, get_data_as_lists, filter_and_pad, encode_sequences
+
+
+def sparse_cross_entropy(y_true, y_pred):
+    """
+    Calculate the cross-entropy loss between y_true and y_pred.
+
+    y_true is a 2-rank tensor with the desired output.
+    The shape is [batch_size, sequence_length] and it
+    contains sequences of integer-tokens.
+
+    y_pred is the decoder's output which is a 3-rank tensor
+    with shape [batch_size, sequence_length, num_words]
+    so that for each sequence in the batch there is a one-hot
+    encoded array of length num_words.
+    """
+
+    # Calculate the loss. This outputs a
+    # 2-rank tensor of shape [batch_size, sequence_length]
+    loss = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=y_true, logits=y_pred)
+
+    # Keras may reduce this across the first axis (the batch)
+    # but the semantics are unclear, so to be sure we use
+    # the loss across the entire 2-rank tensor, we reduce it
+    # to a single scalar with the mean function.
+    loss_mean = tf.reduce_mean(loss)
+
+    return loss_mean
+
 
 MAX_CODE_LENGTH = 50
 MAX_COMMENT_LENGTH = 50
@@ -24,7 +53,7 @@ encoder_inputs = Input(shape=(None,))
 en_x = code_embedding(encoder_inputs)
 
 # Encoder lstm
-encoder = LSTM(10, return_state=True, activation='tanh')
+encoder = LSTM(50, return_state=True)
 encoder_outputs, state_h, state_c = encoder(en_x)
 # We discard `encoder_outputs` and only keep the states.
 encoder_states = [state_h, state_c]
@@ -34,20 +63,37 @@ decoder_inputs = Input(shape=(None,))
 # Comment word embeddings
 final_dex = comment_embedding(decoder_inputs)
 # decoder lstm
-decoder_lstm = LSTM(10, return_sequences=True, return_state=True, activation='tanh')
+decoder_lstm = LSTM(50, return_sequences=True, return_state=True)
 decoder_outputs, _, _ = decoder_lstm(final_dex, initial_state=encoder_states)
 
 batch_norm = BatchNormalization()(decoder_outputs)
-dropout = Dropout(0.2)(batch_norm)
 
-decoder_dense = Dense(len(comment_vocab), activation='softmax')
-decoder_outputs = decoder_dense(dropout)
+decoder_dense = Dense(len(comment_vocab) + 1, activation='softmax')
+decoder_outputs = decoder_dense(batch_norm)
+
 # While training, model takes eng and french words and outputs #translated french word
 model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
 # rmsprop is preferred for nlp tasks
 
-optimizer = Adam(epsilon=0.0001, clipnorm=1.0)
+optimizer = Adam(lr=0.001, beta_2=0.98)
 
-model.compile(optimizer=optimizer, loss=sparse_categorical_crossentropy, metrics=[sparse_categorical_accuracy])
-model.fit([encoded_x, encoded_y], decoder_target_data, batch_size=256, epochs=100)
+decoder_target = tf.placeholder(dtype='int32', shape=(None, None))
+
+model.compile(optimizer=optimizer, loss=sparse_cross_entropy, metrics=[sparse_categorical_accuracy],
+              target_tensors=decoder_target)
+
+path_checkpoint = 'checkpoints/seq2seqLSTM.keras'
+callback_checkpoint = ModelCheckpoint(filepath=path_checkpoint,
+                                      monitor='val_loss',
+                                      verbose=1,
+                                      save_weights_only=True,
+                                      save_best_only=True)
+
+callback_tensorboard = TensorBoard(log_dir='logs/',
+                                   histogram_freq=0,
+                                   write_graph=False,
+                                   update_freq=20000)
+
+model.fit([encoded_x, encoded_y], decoder_target_data, batch_size=256, epochs=100, validation_split=0.1,
+          callbacks=[callback_checkpoint, callback_tensorboard])
 model.save('weights/seq2seqLSTM.h5')
