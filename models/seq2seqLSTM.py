@@ -5,6 +5,7 @@ from keras.layers import Input, LSTM, Dense, BatchNormalization
 from keras.models import Model
 from keras.optimizers import Adam
 from tensorflow.keras.metrics import sparse_categorical_accuracy
+import numpy as np
 
 from preprocess.build_vocabs import get_embedding_layers, get_data_as_lists, filter_and_pad, encode_sequences
 
@@ -34,7 +35,6 @@ def sparse_cross_entropy(y_true, y_pred):
     loss_mean = tf.reduce_mean(loss)
 
     return loss_mean
-
 
 MAX_CODE_LENGTH = 50
 MAX_COMMENT_LENGTH = 50
@@ -75,7 +75,7 @@ decoder_outputs = decoder_dense(batch_norm)
 model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
 # rmsprop is preferred for nlp tasks
 
-optimizer = Adam(lr=0.001, beta_2=0.98)
+optimizer = Adam(lr=0.1, beta_2=0.98, decay=1e-4)
 
 decoder_target = tf.placeholder(dtype='int32', shape=(None, None))
 
