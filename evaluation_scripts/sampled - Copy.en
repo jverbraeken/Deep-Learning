@@ -1,0 +1,500 @@
+Shutdown the text writer.
+Create a sequence containing one object.
+Checks to see if the keep-alive loop should be broken, performing any processing (e.g. sendfile handling) that may have an impact on whether or not the keep-alive loop should be broken.
+Looks up touching pins at the first corner and the last corner of the trace. used to avoid acid traps.
+Indicates if this attribute has an \"is\" getter.
+Logs the request info according to the configured extended log format.
+Display the dialog, adding the fragment using an existing transaction and then committing the transaction.
+Registers the provided backend initialization listener with the directory server.
+Andnot for two positive numbers; the first is longer.
+Constructs and initializes a point with the same location as the specified <code>point</code> object.
+Calculates the checksum of a file.
+Process notification of a skipped entity.
+Checks if server instance identified by serverid is the primary server for this openam server\'s site. how this check is performed varies depending on whether or not this server is running as part of a site: - if a site is running, the primary server details refer to the site\'s primary server (usu. load balancer). - if a site hasn\'t been setup, then the primary server details will match the local server details.
+Tests for equality between the specified identity and this identity. this method should be overriden by subclasses to test for equality. the default behavior is to return true if the names and public keys are equal.
+Whether this listener accepts cancelled events.
+Mapbox builder.
+<p> converts an array of bytes into a string.
+Encode the address as a string and return it.
+Handles back button request.
+Creates an instance of adguardservice.
+Creates a new keynotfoundexception datatype.
+Formats this date-time using the specified formatter. <p> this date-time will be passed to the formatter to produce a string.
+Constructs an <code>upgradeexception</code> with given <code>throwable</code>.
+A factory method to build the appropriate luminancesource object based on the format of the preview buffers, as described by camera.parameters.
+Create an instance of requesterauthorizationelement.
+Resolves a uri reference against a base uri. work-around for bug in java.net.uri (<http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4708535>).
+Prints messages only when the debug state is either debug.message or debug.on. <p><b>note:</b> debugging is an io intensive operation and may hurt application performance when abused. particularly, note that java evaluates arguments to <code>message()</code> even when debugging is turned off. so when the argument to this method involves the string concatenation operator \'+\' or any other method invocation, <code>messageenabled</code> <b>must</b> be used. it is recommended that the debug state be checked by invoking <code>messageenabled()</code> before invoking any <code>message()</code> methods to avoid unnecessary argument evaluation and maximize application performance.</p>.
+Use null_key for key if it is null.
+Determines if a method is a valid lifecycle callback method.
+Returns this reader\'s position.
+Constructs a <code>decision</code> object from an xml string.
+Every last protocol message that is going to be sent from my peer has to have a record.
+Adapt a sax2 start prefix mapping event.
+Constructs xacmlprivilegeutils.
+Returns a new instance of this fragment for the given section number.
+Fills the specified range in the array with the specified element.
+Visits a line number declaration.
+Creates a context for the compositing operation. the context contains state that is used in performing the compositing operation.
+Determines if the <code>securityassertion</code> contains saml bearer confirmation method.
+Constructs an instance with the value present.
+Called by the gc when the object is garbage collected release the cursor in case the iterator was badly used and releasecursor was never called.
+Initialize a new instance of this user database component.
+Runs the test case.
+Creates a replymessageattribute from the on-the-wire octets.
+Ensures that the directory server is running.
+Runs this test from the command line.
+Stop operations with a list of replication servers.
+Stop streaming.
+Runs this test from the command line.
+Log an exception.
+Inserts the specified element into this delay queue. as the queue is unbounded this method will never block.
+Print connector values. <ul><li> spezial handling to default jkhome. </li><li> don\'t save catalina.base path at server.xml</li><li></ul>.
+Checks of the ip falls in the valid range between start and end ip adrresses.
+Simple utility method that searches the given array of strings for the given string. this method is only called from getextendedstate if the developer has specified a specific state for the component to be in (ie, has \"wedged\" the component in that state) by specifying they client property \"nimbus.state\".
+Divide by zero.
+Removes any previous compression quality setting. <p> the default implementation resets the compression quality to <code>0.75f</code>.
+Construct a new principal, associated with the specified realm, for the specified username and password, with the specified role names (as strings).
+Writes a string to a file.
+This method gets parameter id, parameter data, and registered parameter name for all parameters of a rule action from the database and adds them to two the two maps paramsdata and paramsregisteredparamid.
+Delete a subtree of entries. we cannot use the subtree delete control because it is not supported by the config backend.
+Read the number from the byte array.
+Handles all processing required to remove the provided matching rule use from the server schema, ensuring all other metadata is properly updated. note that this method will first check to see whether the same matching rule use will be later added to the server schema with an updated definition, and if so then the removal will be ignored because the later add will be handled as a replace. if the matching rule use will not be replaced with a new definition, then this method will ensure that there are no other schema elements that depend on the matching rule use before allowing it to be removed.
+Removes slash from the end if necessary.
+For each identified privilege update, amend to the list of permissions those which are new.
+Subtract two negative numbers of the same length. the second is greater in absolute value.
+Invokes the <code>update</code> method on each ui handled by this object.
+Closes the socket. it is not possible to reconnect or rebind to this socket thereafter which means a new socket instance has to be created.
+Process the start event for an associated host.
+Removes a listener previously added with <b>addtreemodellistener()</b>.
+Returns the integer [0..15] value for the given hex character, or -1 for non-hex input.
+Creates an sqlintegrityconstraintviolationexception object. the reason string is set to the given and the cause throwable object is set to the given cause throwable object.
+Check that the mods given as first parameter match the next parameters.
+Read data from the input buffer and put it into a byte chunk. the buffer is owned by the protocol implementation - it will be reused on the next read. the adapter must either process the data in place or copy it to a separate buffer if it needs to hold it. in most cases this is done during byte-&gt;char conversions or via inputstream. unlike inputstream, this interface allows the app to process data in place, without copy.
+Is the license expired?.
+Version for innocuousforkjoinworkerthread.
+Attaches the view to the presenter.
+Indicates whether a secret originally comes from this class or not.
+Sips the current scope while reading a dsn file. returns false, if no legal scope was found.
+Creates a new instance of this sasl mechanism handler. no initialization should be done in this method, as it should all be performed in the <code>initializesaslmechanismhandler</code> method.
+Ensures the supplied port number is valid.
+Constructs a graphic object that shows progress, typically by filling in a rectangular bar as the process nears completion.
+Adds a new waiter to wait queue.
+Writes the object using a <a href=\"../../../serialized-form.html#java.time.zone.ser\">dedicated serialized form</a>.
+Prints the.
+Creates a horizontal glue component.
+See if we can gc after a failed load.
+Creates an empty <code>tabbedpane</code> with the specified tab placement and tab layout policy. tab placement may be either: <code>jtabbedpane.top</code>, <code>jtabbedpane.bottom</code>, <code>jtabbedpane.left</code>, or <code>jtabbedpane.right</code>. tab layout policy may be either: <code>jtabbedpane.wrap_tab_layout</code> or <code>jtabbedpane.scroll_tab_layout</code>.
+To be called from an activity or fragment\'s oncreate method.
+Runs this test from the command line.
+Returns an instance of the ui delegate for the specified component. each subclass must provide its own static <code>createui</code> method that returns an instance of that ui delegate subclass. if the ui delegate subclass is stateless, it may return an instance that is shared by multiple components. if the ui delegate is stateful, then it should return a new instance per component. the default implementation of this method throws an error, as it should never be invoked.
+A factory method used for the creation of new xml elements that can be added to this xml document at a later stage. when this method is called, a new <code>xmlelement</code> object is returned to the caller. however, this newly created element is still not attached to the document anywhere and it is the responsiblity of the caller to attach it in the appropriate location. note that the supplied parameter <code>xmlfragement</code> must be a valid well-formed xml element.
+Returns <code>yyyy-mm-dd hh:mm:ss</code> string representation of a date.
+Removes all qualifiers from the node and sets the options appropriate.
+This method adds the attribute, but also records its qname/index pair in the hashtable for fast lookup by getindex(qname).
+Submits the given runnable to the room executor and waits until it has been executed. currently, this simply means that the runnable will be run directly inside of a synchronized() block.<br> note that if a runnable recursively calls invokeandwait() with another runnable on this room, it will not be executed recursively, but instead cached until the original runnable is finished, to keep the behavior of using a executor.
+Get a list of job in certain state and type in range (from, to) with order.
+Adds the standard metadata entity descriptor under the realm to cache.
+Returns string representation of the object.
+// hide both the navigation bar and the status bar. // system_ui_flag_fullscreen is only available on android 4.1 and higher, but as // a general rule, you should design your app to hide the status bar whenever you // hide the navigation bar.
+Tells whether this stream is ready to be read.
+Adds view to specified cache. creates a cache list if it is null.
+Initializes the value associated with a dynany object with the value associated with another dynany object. the current position of the target dynany is set to zero for values that have components and to -1 for values that do not have components.
+Responds to changes in the sms data layer - we only handle changes to the deployed services.
+Returns samlv2 <code>response</code> object. a new <code>response</code> object is created from the received response to include decrypted assertion if the response contained encrypted assertion.
+Checks whether the \'playercount\' field has been set.
+Creates a key for a method in a method cache.
+<p>reads the 8 bits of the standard utah-shaped pattern.</p> <p>see iso 16022:2006, 5.8.1 figure 6</p>.
+Reads the next int that was encoded as a utf8 string.
+Returns the suborganization names. returns a set of rdns that are suborganization name. the paramter <code>numofentries</code> identifies the number of entries to return, if <code>0</code> returns all the entries.
+Check that the provided entry has a single value attribute which has the expected attribute value.
+Notifies the attached observers that the underlying data has been changed and any view reflecting the data set should refresh itself.
+Apply mask penalty rule 4 and return the penalty. calculate the ratio of dark cells and give penalty if the ratio is far from 50%. it gives 10 penalty for 5% distance.
+Create a wrapper for the statement which traces this statement to the connection which created it and the code which created it.
+Translates the specified character, which is assumed to be in the \"base 64 alphabet\" into its equivalent 6-bit positive integer.
+Returns an array of integer from a collection of integer objects.
+Rendering nv21 using native window.
+Constructs a sessiontracker to track the session object passed in. if the session is null, then it will track the active session instead.
+Force the finished field to a particular value.
+Remove the specified context attribute.
+Runs the test case.
+Paints the background of a root pane.
+Constructs a new <code>transactionunavailableexception</code> with the specified error message and specialized cause that triggered this error condition.
+Returns true if the given port can be found in the collection.
+Returns a string representation of the buildversion including the major, minor and point versions, but excluding the revision number.
+Create genre field <p>if the content can be parsed to one of the known values use the genre field otherwise use the custom field.
+Binary search in the cache for line containing specified offset (which is relative to the beginning of the view). this method assumes that cache exists.
+Invokes the set of post-response search plugins that have been configured in the directory server.
+Creates a new framebodytsst datatype.
+Create an instance of securityelement.
+Add two numbers of equal positive scales using mathcontext.
+Creates html report.
+Inserts the specified element into this priority queue.
+Calculates the union if two ip ranges.
+Returns the intersection of the first line with the second line.
+Performs a blocking read using the bytebuffer for data to be read and a selector to block. if the <code>selector</code> parameter is null, then it will perform a busy read that could take up a lot of cpu cycles.
+To string.
+Creates a directory.
+Must not be called.
+Creates an ssl socket or a normal/basic socket using the hostname and portnumber encapsulated in the current object, or with the passed in socket if it needs to use start tls.
+Method to check if two schema attribute types are equal.
+Returns a shallow copy of this <tt>hashset</tt> instance: the elements themselves are not cloned.
+Performs start tag.
+Registers for changes to service\'s configuration. the object will be called when configuration for this service and version is changed.
+To be removed in a future release.
+Creates and installs any required subcomponents for the jtabbedpane. invoked by installui.
+Returns a new instance of <code>encryptedassertion</code>. the return object is immutable.
+Creates a new segment.
+Show update notifications if updates are available.
+Translates the java object to an xml requestset document and sends the corresponding xml document to the specified url.
+Removes the specified certificate from the key store.
+Nothing to clean up.
+Adds a member to the group. the change is saved to persistent storage.
+Tell if two objects are functionally equal.
+Write the data including new ilst <p>can be used as long as we dont have to adjust the size of moov header.
+Checks that the type of the given opcode is equal to the given type.
+Write an html or xml header.
+Constructs a new instance of the operationmonitor default scope allows testing.
+Figure out which classloader to use. for jdk 1.2 and later use the context classloader.
+Glsurfaceview has default 16bit depth buffer.
+To generate new goomba enemy in stage. the generated element must be added into <b>spritehandler</b> class\'s <em>enemies</em> list and to the <em>stagecontainer</em>.
+Returns the first foo in the ordered set where uuid = &#63;.
+Creates a new membership exception with the provided information.
+Deletes the foo with the primary key from the database. also notifies the appropriate model listeners.
+Post data to uri.
+Simple check if a character is a valid xml name char (every char except the first one), according to the xml spec 1.1: http://www.w3.org/tr/xml11/#nt-namechar.
+A drag event has begun over this layout. it may have begun over this layout (in which case ondragchild is called first), or it may have begun on another layout.
+Constructs the server fault exception with the given message code.
+Constructs a <code>fsartifactstats</code> object for a given provider.
+Main target isapplicable method. this method performs the target keyword match functionality, which allows for directory entry \"targeting\" using the specified aci, aci targets class and dn.
+Called from beancontextsupport readobject before it deserializes the children ... this class will deserialize any serializable beancontextserviceproviders serialized earlier thus making them available to the children when they deserialized. subclasses may envelope this method to insert their own serialization processing that has to occur prior to serialization of the children.
+Go through the list of class loaders and try to load the requested class. the method will stop as soon as the class is found. if the class is not found the method will throw a <code>classnotfoundexception</code> exception.
+Create an instance of authnstatementtype.
+Compile and load a prototype for the tag file. this is needed when compiling tag files with circular dependencies. a prototype (skeleton) with no dependencies on other other tag files is generated and compiled.
+Constructs a defaultcomboboxmodel object initialized with a vector.
+Constructs a new <code>affinetransform</code> from 6 double precision values representing the 6 specifiable entries of the 3x3 transformation matrix.
+Removes a trigger\'s id from the list of triggers in this group.
+Internal conversion. this is needed to support the current springboot actuator auditeventrepository interface.
+Replaces the project lookup content.
+Creates outbound message.
+This method is called when the user wants to maximize the frame. the <code>playmaximizesound</code> action is fired. this action is delegated to the desktopmanager.
+This uses the default stack address to create a listening point.
+Tells whether this stream supports the mark() operation, which it does.
+Returns whether the user provided subcommand is the pre external initialization or not.
+This method generates a date object, formatting according to the \"ddmmyyyyhhmmss\" format and saves the files in the same directory. <p> also does some book keeping operations.
+Checks if policy client is enabled to get notifications from policy service.
+Overwrites or appends a single byte to the cache. the length of the cache will be extended as needed to hold the incoming data.
+Returns the logical not of the underlying filter\'s return value for the same file.
+Checks that the given id is not null, if so will generate an unique id, and then returns the non-null id.
+Writes a sequence of bytes to this channel from the given buffer.
+Removes the current <code>droptargetlistener</code> (unicast source). <p>.
+Returns the method in the given class\'s parent with the name and description. if it\'s not in the given class, further parents are checked. returns null if nothing is found.
+This function buffers all the collected records and sends them when the last protocol message should be sent.
+Check if the mask value of this targattrfilterlist class contains the specified mask value.
+Convenience function with deleted defaulted to false and oldvalue defaulted to null.
+Inserts the specified element into this priority queue.
+Constructs a new file filter that ands the result of two other filters.
+Removes all updatemsg form this queue.
+Construct the <code>ssotokenprovider</code>.
+Divideandremainder(bigdecimal, mathcontext).
+Closes the stream and releases any system resources associated with it. once the stream has been closed, further read(), unread(), ready(), or skip() invocations will throw an ioexception. closing a previously closed stream has no effect.
+Create the factory.
+Parse an openidm revision into an orientdb mvcc version. orientdb expects these to be ints.
+Write the specified map of old entry and new entry dns to the log file. each entry of the map is a line in the file, the key is the old entry normalized dn and the value is the new entry normalized dn. the dns are separated by the tab character. this map is related to a modify dn operation.
+Prepares records for a given protocol message if this protocol message contains a list of records.
+Process the notification.
+Constructs a <code>lineunavailableexception</code> that has <code>null</code> as its error detail message.
+Consumes the chain of agera operators and executes a runnable action on each update() signal, plus, allows single point-cancellation.
+Makes the text underlined and in the link color.
+Creates new spliterator covering the given array and range.
+For use in projects that want initiate a replay via the java api.
+Checks and updates status for a node that failed to acquire. returns true if thread should block. this is the main signal control in all acquire loops. requires that pred == node.prev.
+Creates a new chararraywriter.
+Creates a new entry using the provided lines of ldif decoded using the default schema.
+Indicates whether a connection should use starttls based on this interaction.
+Verifies if a a valid crl is found for the certificate. if this method returns false, it doesn\'t mean the certificate isn\'t valid. it means we couldn\'t verify it against any crl that was available.
+Invoked when a window is de-activated.
+Fixes the selected items.
+Creates an address with the new display name and uri attribute values.
+Clearbit(0) in the negative number of length 2 with all ones in bit representation. the resulting number\'s length is 3.
+Increments the counter for a connection. boolean indicator controls whether we increment the successful or unsuccessful connection counter.
+Append a text child at the current insertion point. assumes that the actual content of the text has previously been appended to the m_char buffer (shared with the builder).
+Assertion for text printed by tags:echo.
+Constructs a <code>sqlsyntaxerrorexception</code> object with a given <code>reason</code> and <code>cause</code>. the <code>sqlstate</code> is initialized to <code>null</code> and the vendor code is initialized to 0. <p>.
+Create typed configuration for metrics module out of generic module configuration.
+Appends a key/value pair to a map.
+Pop a node from the tail of the vector and return the result.
+Create a new password policy exception with a custom error message.
+Construct the idmservletcontextfactory.
+Adds a menu choice to the menu which will have a single letter as its key.
+Overrides equals.
+Returns the number of foos where field2 = &#63;.
+Appends the least-significant bits, from value, in order from most-significant to least-significant. for example, appending 6 bits from 0x000001e will append the bits 0, 1, 1, 1, 1, 0 in that order.
+Returns the day of year for the requested hijrahyear and month.
+Indicates whether this search filter is equal to the provided object.
+Creates a new requireheader based on the newly supplied optiontag value.
+Test that the entryset() method produces correctly mutable entries.
+Create an options menu.
+Evaluate xpath string to an xobject. using this method, xpath namespace prefixes will be resolved from the namespacenode.
+Returns true if the openam version of the war file is newer than the one currently deployed.
+Receive notification of the start of an element.
+This method is almost as weird as notuncommon. only return false if your common internals are unequal. checking your own internals is redundant if you are not common, as notuncommon is meant for checking those \'not common\' variables.
+Constructs an instance of this class.
+Returns true if this node is the root of the tree. the root is the only node in the tree with a null parent; every tree has exactly one root.
+Creates a <code>keylistener</code> which will be added to the combo box. if this method returns null then it will not be added to the combo box.
+Constructs an effectively empty <code>spinnerlistmodel</code>. the model\'s list will contain a single <code>\"empty\"</code> string element.
+Release a dtm either to a lru pool, or completely remove reference. dtms without system ids are always hard deleted. state: experimental.
+Use null_key for key if it is null.
+Draw child views according to detailview\'s position in listviews.
+Indicates whether the ldif generated should include attribute types (i.e., attribute names) only or both attribute types and values.
+Messes with a few decompilers when used in combination with other features. apparently pop2 is hard to work with.
+Parser for rewritecond flags.
+Runs this test from the command line.
+Constructs a new token endpoint auth method type.
+Indicate that a new wait period has started and the spam checker should reset.
+Encodes a byte array into base64 notation.
+Create an instance of relatestoelement.
+Test #2 for <code>read(byte[],int,int)</code> method<br> assertion: returns the number of bytes read<br> assertion: put bytes read into specified array at specified offset<br> assertion: updates associated digest<br>.
+Add a property of type object.
+Connection change record writers do not require flushing, so this method has no effect.
+Returns the start index of the subsequence captured by the given group during the previous match operation. <p> <a href=\"pattern.html#cg\">capturing groups</a> are indexed from left to right, starting at one. group zero denotes the entire pattern, so the expression <i>m.</i><tt>start(0)</tt> is equivalent to <i>m.</i><tt>start()</tt>. </p>.
+Constructs a <code>featuredescriptor</code>.
+Removes application.
+Constructs a script engine with the given parent engine factory.
+Adds the definition for the specified dit structure rule to the provided set of attribute values, recursively adding superior rules as appropriate.
+Determine if this mime type object is equal to the given object. the two are equal if the given object is not null, is an instance of class net.jini.print.data.mimetype, and has the same canonical form as this mime type object (that is, has the same type, subtype, and parameters). thus, if two mime type objects are the same except for comments, they are considered equal. however, \"text/plain\" and \"text/plain; charset=us-ascii\" are not considered equal, even though they represent the same media type (because the default character set for plain text is us-ascii).
+Appends all of the elements in the specified collection to the end of this vector, in the order that they are returned by the specified collection\'s iterator. the behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (this implies that the behavior of this call is undefined if the specified collection is this vector, and this vector is nonempty.).
+Removes annotation content item from the tag structure. if annotation is not added to the document or is not tagged, nothing will happen.
+Only pdfreader can use this method!.
+Constructs searchresults from <code>ldapsearchresult</code>.
+Create an instance of statuselement.
+Generates a name through the use of a trained markov chain.
+Used by super class to log the attribute\'s contents when packet logging is enabled.
+Update fm recorder mode with given mode from fm service.
+Adds an attribute to a subrange of the string.
+Gets whether the respawn location is the player\'s bed.
+Inserts a string value into the dynany. both bounded and unbounded strings are inserted using this method.
+Test the case where the thread is preemptively unparked.
+Apply mask penalty rule 1 and return the penalty. find repetitive cells with the same color and give penalty to them. example: 00000 or 11111.
+Adds new attribute schema to an existing service.
+Does sso with existing federation or new federation.
+Constructs a new exception with the specified cause.
+Process the bye request.
+Constructs a new <code>urireferenceexception</code> with <code>null</code> as its detail message.
+Receive notification of ignorable whitespace in element content.
+Check can write to file.
+Initializes the properties to be used by open federation library. ideally this must be called first before any other method is called within open federation library. this method provides a programmatic way to set the properties, and will override similar properties if loaded for a properties file.
+Process the invite request.
+Creates a new synthsplitpaneui instance.
+Creates a <code>gridbagconstraint</code> object with all of its fields set to their default value.
+Create a new instance of <code>requestcontext</code>, which will have a reference to the original <code>transactionid</code> and a copy of the original properties. a copy can be used to hand over the context from one thread to another and therefore we make a copy of the properties in order to keep the map thread-safe. the transactionid is thread-safe and we want to see the sequence of sub-transactionids shared across threads.
+New bigdecimal(string value, mathcontext).
+Replace/resolve the object read from the stream before it is returned to the caller.
+Creates a new utilproxyidprequestvalidator for a request.
+Throws <code>cannotredoexception</code> if <code>canredo</code> returns false. sets <code>hasbeendone</code> to <code>true</code>. subclasses should override to redo the operation represented by this edit. override should begin with a call to super.
+Construct a new instance from the password string and chap identifier code from the chap response. rfc 2865 isn\'t very clear on the \"password\" value other than saying it is 16 octets in length. for clarity we must read rfc 1994 section 4.1 that indicates the chap-password hold a 16 byte hash value created as noted in the rfc. therefore, we ensure that the resulting bytes are 16 in length and if less we pad them with 0 values. additionally, the integer value should be less than 256 since it gets truncated to a single octet.
+Factory method to create an expression.
+Cleanups after each tests.
+Test for <code>getinstance(string algorithm, provider provider)</code> method assertion: returns algorithmparametergenerator object.
+Removes the object at the specified location from this list.
+This method is called if the tailed file is not found.
+Function calculates the number of ranges in the charset.
+Print the the trace of methods from where the error originated. this will trace all nested exception objects, as well as this object.
+Updates the contents of dn value to reflect the data that the user is providing.
+Ensures that the directory server is running.
+Constructs a new pdfadocument for writing purposes, i.e. from scratch. a pdf/a file has a conformance level, and must have an explicit output intent.
+Creates a new framebodytsrc datatype.
+Static version of lastindexof.
+Construct an xml filter with the specified parent.
+Gets the hash code for this object.
+Exponentiation of a negative number to an even exponent.
+Indicates whether the server startup plugins have been called.
+Sends an alert notification with the provided information.
+See the general contract of the <code>mark</code> method of <code>inputstream</code>.
+Gets the value of the <code>defaultbutton</code> property, which if <code>true</code> means that this button is the current default button for its <code>jrootpane</code>. most look and feels render the default button differently, and may potentially provide bindings to access the default button.
+Returns cookie to be set in the response.
+Resumes encoding of the stream. may be helpful if you need to embed a piece of base640-encoded data in a stream.
+Replacement for getting len instead of using direct array.
+Seek station according current frequency and direction.
+Throws interruptedexception, reinterrupts current thread, or does nothing, depending on mode.
+<p>add the set of rule instances defined in this ruleset to the specified <code>digester</code> instance, associating them with our namespace uri (if any). this method should only be called by a digester instance.</p>.
+Create an instance of signedinfoelement.
+Create an instance of referencelisttypekeyreference.
+Initializes class data.
+Clears any objects sitting idle in the pool.
+Create a new instance of the samltoken.
+Return canonical form.
+Returns true if hidden files are not shown in the file chooser; otherwise, returns false.
+Notifies all listeners that have registered interest for notification on this event type.
+Sends a request to a soap endpoint and returns the response. the server only contains one servlet for different web services. so the soap endpoint url has format \'servlet_url/key\'.
+Cleanup the whole junit scenario ; deletes the created git repository.
+Initialise the generator with a source of randomness and a strength (in bits).
+Returns a cloned map of string to set of string.
+When converting v3 time to v4 tdrc frame.
+Serializes the node value in xml encoding. its used for tag bodies and attributes. <em>note:</em> the attribute is always limited by quotes, thats why <code>&amp;apos;</code> is never serialized. <em>note:</em> control chars are written unescaped, but if the user uses others than tab, lf and cr the resulting xml will become invalid.
+Create an instance of actionelement.
+This method is to validate the file format. it will return true when file format is avro else it will return false.
+Returns a <code>jscrollpane.scrollbar</code> by default. subclasses may override this method to force <code>scrollpaneui</code> implementations to use a <code>jscrollbar</code> subclass. used by <code>scrollpaneui</code> implementations to create the horizontal scrollbar.
+Constructs a new <code>midievent</code>.
+Returns an array containing all of the elements in this queue. the returned array elements are in no particular order. <p>the returned array will be \"safe\" in that no references to it are maintained by this queue. (in other words, this method must allocate a new array). the caller is thus free to modify the returned array. <p>this method acts as bridge between array-based and collection-based apis.
+It seems that the ssl engine does not remember if an error has already occurred so we must cache it here and rethrow. see opendj-652.
+Read properties file.
+Provides a mapping from the document model coordinate space to the coordinate space of the view mapped to it. this makes sure the allocation is valid before calling the superclass.
+Create an instance of the specified java content interface.
+Checks if the attribute allows to have resource name.
+Runs the test case.
+Construct a objectvector, using the given block size.
+Returns true if this result is an underflow condition.
+Returns the count of padstacks in this object.
+Returns a value indicating whether or not this plugin is currently enabled.
+Runs the test case.
+Shows a region of a previously rendered component. this will return true if successful, false otherwise. the default implementation returns false.
+Returns whether this requesting user name attribute is equivalent to the passed in object. to be equivalent, all of the following conditions must be true: <ol type=1> <li> <code>object</code> is not null. <li> <code>object</code> is an instance of class requestingusername. <li> this requesting user name attribute\'s underlying string and <code>object</code>\'s underlying string are equal. <li> this requesting user name attribute\'s locale and <code>object</code>\'s locale are equal. </ol>.
+Creates assignable dynamic groups in this group.
+Returns the object that will replace this one.
+Runs this test from the command line.
+Creates a new instance of rsinfo with every given info.
+Creates a new key binding.
+Runs the test case.
+Update the ring color if this is within the last 25% of the animation. the new ring color will be a translation from the starting ring color to the next color.
+Creates a new panel with the specified layout manager.
+Construct a new regular expression filter with the specified flags.
+Creates a new account usability response control that may be used to indicate that the account is not available and provide information about the underlying reason. it will use the default oid and criticality.
+Invoke js_server method.
+Create a new httpconnector.
+Runs the test case.
+Invokes the <code>contains</code> method on each ui handled by this object.
+Test #2 for <code>gettype()</code> method<br> assertion: returns <code>crl</code> type.
+Process the ack request. send the bye and complete the call flow.
+Skips the input matching the end of a sequence and preceding space characters.
+Parse the string message.
+Inserts the specified element at the front of this list.
+Runs this test from the command line.
+Writes a java object tree to xml and store it to the specified location.
+Runs the test case.
+Formats this <code>fsexception</code> to a <code>printwriter</code>.
+Check whether the literal is char<br> the method only checks literal start symbol and it\'s length.
+Adds the provided prohibited attributes to the list of attribute types that entries subject to this dit content rule must not contain.
+Handling post requests.
+Removes membership of <code>amidentity</code> itself from it.
+Initialize the configuration framework.
+Initialize the persistence.
+Returns whether this text attribute is equivalent to the passed in object. to be equivalent, all of the following conditions must be true: <ol type=1> <li> <code>object</code> is not null. <li> <code>object</code> is an instance of class textsyntax. <li> this text attribute\'s underlying string and <code>object</code>\'s underlying string are equal. <li> this text attribute\'s locale and <code>object</code>\'s locale are equal. </ol>.
+Creates a new set of authentication information to be used for clients that are authenticated internally.
+Verify that the given verifier can successfully verify the signature on this signerinformation object.
+Called when the mouse wheel is rotated while over a jscrollpane.
+Handles cancel button request.
+Static method to serialize the metadata object. for each serialisation, a new xmpserializer instance is created, either xmpserializerrdf or xmpserializerplain so thats its possible to serialialize the same xmpmeta objects in two threads.
+Overridden for performance reasons. see the <a href=\"#override\">implementation note</a> for more information.
+Creates an instance of this view bean.
+For the enclosing elements starting tag write out out any attributes followed by \">\".
+Creates a new id3v2_4 datatype.
+Determines whether two entities are in the same circle of trust under the realm.
+Simple check to determine if qname is legal. if it returns false then <param>str</param> is illegal; if it returns true then <param>str</param> is legal.
+Default toxml method to marshal object into xml.
+Display as hex.
+Creates a paragraph, initialized with a piece of text.
+Returns a string representation of this tagattributeinfo, suitable for debugging purposes.
+Compares only the <code>mimetype</code> against the passed in <code>string</code> and <code>representationclass</code> is not considered in the comparison. if <code>representationclass</code> needs to be compared, then <code>equals(new dataflavor(s))</code> may be used.
+Determines if the user belongs to the <code>authenticatedusers</code> object.
+A few threads execute update operation in the same time for one tables in the database. number of threads is defined by numthreads variable.
+Handles any exception that is thrown when processing a oauth2 authorization request.
+The operation to perform when this action is triggered.
+Can be used to clear cached state when it is known that the underlying connection may have been accessed directly.
+In this scenario, the fake rs will not send back an ack so we expect the add entry code (ldap client code emulation) to be blocked for the timeout value at least. if the time we have slept is lower, timeout handling code is not working...
+Method that returns the string representation of the <code>amattributeschema</code>.
+Removes the specified element from this set if it is present. more formally, removes an element <tt>e</tt> such that <tt>(o==null&nbsp;?&nbsp;e==null&nbsp;:&nbsp;o.equals(e))</tt>, if this set contains such an element. returns <tt>true</tt> if this set contained the element (or equivalently, if this set changed as a result of the call). (this set will not contain the element once the call returns.).
+Marks the current position in this stream. setting a mark is not supported in this class; this implementation does nothing.
+Constructs a new restletoauth2request.
+Encode the input data producing a hex encoded byte array.
+Constructs a <code>no_memory</code> exception with the specified description message, minor code, and completion status.
+The function marks the beginning of the subrs index and adds the subsetted subrs index to the output list.
+Searches for the last index of the specified character. the search for the character starts at the end and moves towards the beginning.
+Create a positive number from a sign and an array of bytes. the number fits in an array of integers. the most significant byte is positive.
+Deregister the mbean for this <code>contextresourcelink</code> object.
+Use this to mmap the whole file read-only.
+Retrieves whether a value stored in the designated column is automatically numbered, and thus readonly.
+Receive notification of cdata. <p>the parser will call this method to report each chunk of character data. sax parsers may return all contiguous character data in a single chunk, or they may split it into several chunks; however, all of the characters in any single event must come from the same external entity, so that the locator provides useful information.</p> <p>the application must not attempt to read from the array outside of the specified range.</p> <p>note that some parsers will report whitespace using the ignorablewhitespace() method rather than this one (validating parsers must do so).</p>.
+Returns the set of keys of this map.
+Test for method <code>getinstance(string type, certstoreparameters params, string provider)</code> assertion: throws nosuchproviderexception when provider has invalid value.
+Creates a set of file for testing.
+Returns <code>subjectdecision</code> of <code>entitlementsubject</code> evaluation.
+Constructs a leaf block of the given tree species and flag for whether this leaf block will disappear when too far from a log.
+Constructs an <code>abstractmethoderror</code> with no detail message.
+Returns a hash code for this shaper.
+Creates a base entry suffix options.
+Checks that this pooled connection has not been closed.
+Indicates whether the property value is set and equal to \"true\" for the supplied property name.
+Decode the hex encoded string data - whitespace will be ignored.
+Clears the default hyphenation tree cache. this method can be used if the underlying data files are changed at runtime.
+Given a count of black/white/black pixels just seen and an end position, figures the location of the center of this black/white/black run.
+Creates a string representation of this object. by default name space name is prepended to the element name.
+Constructs a new exception with the specified detail message.
+Returns true if the component being painted is the root component that was previously passed to <code>repaintroot</code>.
+Searches for dynamic groups in this organization unit using wildcards. wildcards can be specified such as a*, *, *a.
+Read the xing properties from the buffer.
+This function stores the server list by parsing platform server list that are stored in <code>iplanetamplatformservice</code>. this would expect the servers from the platform service are in the following format protocol://server.domain:port|serverid e.g. http://shivalik.red.iplanet.com:58080|01 http://solpuppy.red.iplanet.com:58081|02 the serverid can be anything and does not need to be a number if the platform server is not in the correct format, that entry will be ignored. note: this server id should be unique if it\'s participating in load balancing mode.
+Returns a dn which is subordinate to this dn and having the additional rdn components contained in the provided dn.
+Parses the provided configuration and configure the notification handler.
+Create an instance of dsakeyvalueelement.
+Formats an exception to a <code>printwriter</code>.
+Instantiates a new jk xml exception.
+Create a new <code>dtmiterator</code> based on an xpath <a href=\"http://www.w3.org/tr/xpath#nt-locationpath>locationpath</a> or a <a href=\"http://www.w3.org/tr/xpath#nt-unionexpr\">unionexpr</a>.
+Construct an exception with associated message.
+Returns a copy of this period with the specified amount of years. <p> this sets the amount of the years unit in a copy of this period. the months and days units are unaffected. <p> the months unit is not automatically normalized with the years unit. this means that a period of \"15 months\" is different to a period of \"1 year and 3 months\". <p> this instance is immutable and unaffected by this method call.
+Paints the border of the thumb of a slider.
+Instantiate a pumpkin facing in a particular direction.
+Constructs a guid object from the specified unique id.
+Consturctor creates <code>encryptablenameidentifier</code> object.
+Receive notification of the beginning of an element, additional namespace or attribute information can occur before or after this call, that is associated with this element.
+Initialize the servicepermission object.
+Creates a new server constraint handler.
+Constructs a new openidconnectauthorizerequestvalidator instance.
+Process the last block in the buffer. if the buffer is currently full and padding needs to be added a call to dofinal will produce 2 * getblocksize() bytes.
+Convert the value of the passed in extension to an object.
+Process the provided ipv4 address string parsed from the ip bind rule address expression. it returns a byte array corresponding to the address string. the specified bit set represents wild-card characters \'*\' found in the string.
+Returns the bit width of the segment character count field for this mode object at the specified version number.
+Invoked from <code>componentinputmap</code> when its bindings change. if <code>inputmap</code> is the current <code>windowinputmap</code> (or a parent of the window <code>inputmap</code>) the <code>keyboardmanager</code> is notified of the new bindings.
+Contont cannot be empty.
+Sorts the given list using the given comparator. the algorithm is stable which means equal elements don\'t get reordered.
+Creates an instance of <code>smsubconfig</code>.
+Creates a new <code>sizesequence</code> object that contains the specified sizes.
+Subtract two numbers of the same length and different signs. the first is negative. the second is longer.
+Creates a new deletecontext with the provided information.
+Handles reset request.
+Resets tag definitions to the default ones.
+Clearbit(int n) outside a positive number.
+Resets the graphics state stack, matrices and resources.
+Clone this.
+Runs the test case.
+Check if a string from a matcher group is absent. matcher returns empty strings for optional groups that are absent.
+Refresh ui, when stop search, dismiss search dialog, pop up recording dialog if fm stopped when recording in background.
+Returns an encoder instance that encodes equivalently to this one, but without adding any padding character at the end of the encoded byte data. <p> the encoding scheme of this encoder instance is unaffected by this invocation. the returned encoder instance should be used for non-padding encoding operation.
+Builds a catalina selector context using the given environment.
+Creates a color chooser pane with the specified initial color.
+Return true if ignore profile is enabled for this realm.
+Test for <code>getinstance(string algorithm, string provider)</code> method assertion: throws illegalargumentexception when provider is null or empty.
+Wraps the provided set of key managers in selectable certificate key managers using the provided alias.
+Handles reset request.
+Converts the given number to its english alphabet lowercase string representation. e.g. 1 will be converted to \"a\", 2 to \"b\", ..., 27 to \"aa\", and so on.
+Queries if the given date is in daylight saving time.
+Delete any instance of tag fields with this key.
+Constructs a new instance.
+Retrieves information whether entity has dual role or not.
+Constructs a filewriter object given a file name with a boolean indicating whether or not to append the data written.
+Moves to the start of the next line, offset from the start of the current line. <p/> as a side effect, this sets the leading parameter in the text state.</p>.
+Constructs a subject object from a <code>subjectconfirmation</code> object.
+Returns true if the buffer\'s name or path matches the file name glob.
+Runs the test case.
+Returns the number of rows matching the dynamic query.
+Overridden for performance reasons. see the <a href=\"#override\">implementation note</a> for more information.
+This method translates the request to an xml document string based on the request schema described above. note: this is a complete saml request xml string with <code>requestid</code>, <code>majorversion</code>, etc.
+Returns a new instance of <code>result</code>.
+Inserts a row at <code>row</code> in the model. the new row will contain <code>null</code> values unless <code>rowdata</code> is specified. notification of the row being added will be generated.
+Removes from this set all of its elements that are contained in the specified collection (optional operation). if the specified collection is also a set, this operation effectively modifies this set so that its value is the <i>asymmetric set difference</i> of the two sets. <p>this implementation determines which is the smaller of this set and the specified collection, by invoking the <tt>size</tt> method on each. if this set has fewer elements, then the implementation iterates over this set, checking each element returned by the iterator in turn to see if it is contained in the specified collection. if it is so contained, it is removed from this set with the iterator\'s <tt>remove</tt> method. if the specified collection has fewer elements, then the implementation iterates over the specified collection, removing from this set each element returned by the iterator, using this set\'s <tt>remove</tt> method. <p>note that this implementation will throw an <tt>unsupportedoperationexception</tt> if the iterator returned by the <tt>iterator</tt> method does not implement the <tt>remove</tt> method.
+Ensures that the external array tmp has at least the specified number of elements, increasing its size if necessary. the size increases exponentially to ensure amortized linear time complexity.
+Paints the border of a slider. this implementation invokes the method of the same name without the orientation.
+Creates a personal profile service profile view bean.
+Displays an error message dialog.
+Determines the index of the next header.
+Ensures that this entry contains the provided attribute and its values. if an attribute with the provided type already exists, then its attribute values will be merged. <p> this method handles object class additions but will not perform any object class validation. in particular, it will create default object classes when an object class is unknown. <p> this method implements ldap modification add semantics, with the exception that it allows empty attributes to be added.

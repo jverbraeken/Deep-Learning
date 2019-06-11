@@ -1,0 +1,500 @@
+Shutdown the connection.
+Create an object.
+Returns true if the connection has been closed.
+Returns the number of points that are in the same order.
+Returns true if this property is null.
+Log a message.
+Show a message.
+Registers a listener for a listener.
+Add a positive numbers for a positive number.
+Create a point.
+Calculates the size of the file.
+Receive notification of a notification.
+Returns true if the connection is a valid connection.
+Returns true if the given object is equal to this object.
+Returns true if the current state is not enabled.
+Creates a new <code>map</code> object.
+Prints a string representation of a byte array.
+Returns a string representation of this object.
+Handles the event event.
+Construct a new instance.
+Constructs a new exception with the specified detail message.
+Formats the given date.
+Constructs a new exception with the specified detail message.
+A method to create a new instance of this instance using the given parameters.
+Creates a <code>factory</code> object.
+Resolves a uri from the given uri.
+Send an error message.
+Returns a map of the key from the specified key.
+Checks if the given object is a valid class.
+Returns the position of the current position.
+Create an instance.
+Ensures that the message can be sent.
+<p>constructs a <code>illegalargumentexception</code> with a <code>null</code> or <code>null</code> or <code>null</code> or <code>null</code>.
+Creates a new instance.
+Creates a new instance of this instance.
+Fills the specified array in the specified array.
+Visits an instruction.
+Creates a <code>null</code> with the specified parameters.
+Returns true if this method is not supported.
+Creates a new instance.
+Cleans up the connection.
+Creates a new instance.
+Runs the test case.
+Creates a new instance.
+Starts the server.
+Runs this test from the command line.
+Stop the server.
+Stops the thread.
+Runs this test from the command line.
+Log an exception.
+Adds a new element to the queue.
+<p>checks if the given <code>object</code> is <code>null</code> or <code>null</code>.
+Returns true if the given string is valid.
+Returns true if the given name is a name.
+Add two positive numbers.
+This method is called when the application has been closed.
+Creates an instance.
+Write a file to a file.
+Adds a request to the database.
+Delete a node.
+Reads an array of bytes from a byte array.
+Removes a new rule from the given group.
+Removes a string from a string.
+This method is called when the application has changed.
+Add two positive numbers.
+Invokes the <code>paint</code> method on the ui thread.
+Closes this connection.
+This method is called when the activity is clicked.
+Removes a listener.
+Converts a byte array to a string.
+Creates a new <code>sqlexception</code> with the specified detail message.
+Asserts that the specified type is a valid type.
+Flushes the contents of the stream.
+Returns true if this message is not enabled.
+Creates a new instance.
+Attaches the view to the view.
+Checks whether the given key is a valid password.
+Attempts to parse a string.
+Creates a new instance of this class.
+Normalizes the specified port.
+Creates a new <code>action</code>.
+Adds a node to the queue.
+Writes the specified string to the given string.
+Prints a string.
+Creates a new component.
+Tests that the class can be loaded.
+Creates a new instance.
+Called when the activity is created.
+Runs this test from the command line.
+Creates a new instance.
+Creates a new instance of this class.
+Convert a date to a string.
+Removes the given instance.
+Adds a string to the given writer.
+Invokes the method that can be invoked by the event.
+Creates a new instance.
+Puts the specified key into the cache.
+Returns a string representation of this object.
+Hides the dialog.
+Returns <code>true</code>.
+Adds a view to the list.
+Assigns the given object to the given node.
+This method is called when the user has been created.
+Create a response from a response.
+Returns true if this field is a valid value.
+Creates a new class name.
+<p>reads the 8 bits of the given byte array.
+Returns a byte array.
+Searches for the given uri for the given uri.
+Ensures that a value is an attribute value.
+Notifies all listeners that have been changed.
+Applies the size of the matrix to the given size.
+Creates a new statement.
+Converts a byte array into a byte array.
+Returns a list of elements from the specified array.
+<p>reads the specified number of bytes from the specified input stream.
+Creates a new connection.
+This method is called when the activity is created.
+Removes the given attribute.
+Runs the test case.
+Paints the border.
+Constructs a new exception with the specified detail message and cause.
+Returns true if the specified port port is not available.
+Returns a string representation of the given string.
+Creates a field for the given field.
+Returns the next line in the line.
+Invokes the request for the given request.
+Creates a new <code>outputstream</code> with the specified detail message.
+Creates a new instance.
+Add two two numbers.
+Creates a new network.
+Adds an element to the specified element.
+Returns the specified range of the specified range.
+Returns the point in the point.
+Reads a byte array from the stream.
+Returns a string representation of this object.
+Create a directory.
+Generates a tag.
+Create a connection to a socket.
+Checks if the given object is a valid type.
+Returns a clone of this object.
+Launch the user.
+Adds a listener to the listener.
+Helper method to sort the specified array of elements in the array.
+Installs the component.
+Create an instance of an instance using the given parameters.
+Constructs a new instance.
+Check if the file has been closed.
+Send a request to the server.
+Remove a key from the given key.
+Cleans up the message.
+Adds a new member to the given name.
+Returns true if this object is equal to the specified object.
+Write the data to the file.
+Checks if the given instruction is a valid signature.
+Writes the contents of the given object to the output stream.
+Creates a new instance.
+Finds the class loader.
+Called when the activity is not running.
+Generates a new instance of the given string.
+Fetches a list of objects from the given type.
+Constructs a new exception with the specified detail message and cause.
+This method is called when a user has changed.
+Posts a request to the request.
+Checks whether the given character is a valid character.
+This method is called when an activity is created.
+Constructs a new exception with the specified detail message.
+Creates a new instance.
+Returns true if the given name is a valid pattern.
+Processes the given object.
+Load a class.
+Creates a new instance of this class.
+Loads a class from a file.
+Constructs a new instance of the given dataset.
+Creates a new matrix with the specified number of points.
+Removes a job.
+Converts a map to a string.
+Updates the project.
+Creates a new instance.
+Set up the frame.
+Creates a new port.
+Returns true if the given <code>listener</code> is <code>null</code> or <code>null</code>.
+Returns true if the given plugin is not supported.
+Remove a file.
+Returns true if enabled.
+Write a byte array.
+Returns true if the given file is a file.
+Generates a string for the given name.
+Writes the current position to the output stream.
+Removes a listener.
+Finds the given class for the given class.
+Sends a message to the server.
+Returns true if the given value is a valid integer.
+Creates a new instance of the given class.
+Inserts the specified element at the specified position.
+Creates a new <code>filter</code> instance.
+Clears the cache.
+Constructs a new instance of the given <code>instance</code> instance.
+Divide.
+Closes the stream.
+Creates a new instance of this class.
+Parses the given version of the server.
+Write a file.
+Prepares the cache.
+Process a notification.
+Constructs a new exception with the specified detail message.
+This method is called when a method is called.
+Updates the current state.
+Creates a new instance.
+This method is called when a method is called.
+Returns true if the current node is a node.
+Creates a new <code>bufferedinputstream</code>.
+Creates a new <code>map</code> object.
+Returns true if the current state is enabled.
+Verify that the given certificate is valid.
+Called when the activity has been created.
+This method is called when an item has been selected.
+Creates a new uri for the given uri.
+Java.
+Adds a connection to the server.
+Appends the specified text to the list.
+Asserts that the specified character is a valid string.
+Creates an sqlexception object.
+Creates a new instance.
+Append a key to the map.
+Pop a node from the queue.
+Constructs a new exception with the specified detail message.
+Creates a new instance of this class.
+Adds a new message to the server.
+Returns true if the specified object is equal to the specified object.
+Returns the hash code for this field.
+Appends the number of bits to the specified buffer.
+Returns a string representation of the year.
+Compares this object with the specified object.
+Creates a new message.
+Test for <code>null</code> method.
+This method is called when the user is clicked.
+Evaluate the expression.
+Returns true if the given file is not supported.
+Receive notification of the start of an element.
+Returns true if the string is a valid name.
+Constructs a new <code>exception</code> with the specified detail message.
+Returns <code>true</code>.
+Creates a new listener.
+Constructs a new instance of the given class.
+Releases the current state.
+Gets the key value of this map.
+Provides a list of items in the view.
+Gets the value of the type.
+Recursively perform a method.
+Parses a string.
+Runs this test from the command line.
+Creates a new instance.
+Reset the state.
+Encodes a byte array into base64 notation.
+Creates a new instance.
+Test for <code>getbyte()</code> method.
+Adds a property to the list.
+Flushes the stream.
+Starts the given node.
+Constructs a new <code>meta</code> instance.
+Delete a file.
+Creates a new instance of this class.
+Adds a new extension to the given file.
+Returns true if the given object is equal to this object.
+Adds the specified element to the specified array.
+Removes an attribute.
+Creates a new <code>string</code> object.
+Creates a new instance.
+Creates a new instance.
+Generates a string for the given string.
+Returns a string representation of this class.
+This method is called when the activity is clicked.
+Adds an element to the given element.
+Returns <code>true</code>.
+Insert a string to the current position.
+Java.util.thread#queue(int).
+Applies the result to the given time.
+Adds the given key to the given name.
+Processes a message.
+Constructs an instance with the specified detail message.
+Processes a message.
+Constructs a new exception with the specified detail message.
+Receive notification of the end of the given element in the specified element.
+Check file.
+Initializes the configuration file.
+Processes a message.
+Creates a new instance.
+Creates a new instance.
+Returns a copy of the client.
+New bigdecimal.
+Ensures that the given object can be used to create a <code>null</code> object.
+Creates a new instance of the given instance.
+Forward a <code>bufferedinputstream</code>.
+Creates a new instance.
+Creates a new expression.
+Cleans up all of the objects that have been created.
+Test for <code>getinstance()</code> method.
+Removes the specified element from the specified element.
+This method is called when a file has been loaded.
+Returns the number of characters in the given range.
+Prints a message to the stack.
+Updates the property.
+Starts the server.
+Creates a new instance of the given data.
+Creates a new instance of the given class.
+Returns the index of the specified element in the specified element.
+Creates a new instance.
+Returns a hash code for this object.
+New bigdecimal(int n) from a positive number.
+This method is called when the application has changed.
+Sends a notification to a notification.
+Marks the current position.
+Returns true if the component has changed.
+Creates a cookie store.
+Resumes the output stream.
+Returns the number of bytes in the specified array.
+Called when the activity is clicked.
+Acquires in the thread.
+Adds a new rule to the current state.
+Creates a <code>bufferedinputstream</code>.
+Creates a new instance.
+Initializes the panel.
+Clears the cache.
+Creates a new <code>token</code> object.
+Returns a string representation of this object.
+Returns true if the current state is enabled.
+Notifies all listeners that have been registered.
+Sends a request to the server.
+Cleans up resources.
+Constructs a new instance of the given generator.
+Deep clone.
+Creates a new instance.
+Append an attribute value.
+Creates the instance.
+Validate file.
+Creates a scroll bar.
+Constructs a new <code>illegalargumentexception</code>.
+Returns an array containing the elements of this array.
+Throws an exception.
+Read a file.
+Provides a <code>view</code> to the specified <code>rectangle</code> and <code>position</code> and <code>null</code> and <code>null</code>. if <code>null</code> is <code>null</code>, this method returns <code>true</code> if <code>null</code> is <code>null</code>. <p>.
+Returns a new instance of this class.
+Gets the value of the property.
+Runs the test case.
+Creates a new <code>object</code> object.
+Returns true if the given value is null.
+Returns the number of bytes in the specified array.
+Gets the value of this property.
+Runs the test case.
+Show an image.
+Returns true if the specified object is equal to this object.
+Creates a group for the given group.
+Ensures that the given object is the same as an object.
+Runs this test from the command line.
+Creates a new instance.
+Creates a new instance.
+Runs the test case.
+Updates the color of the color.
+Creates a new panel.
+Creates a new <code>pattern</code>.
+Creates a new instance.
+Invoke the request.
+Creates a new connection.
+Runs the test case.
+Invokes the <code>getinstance</code> method.
+Tests the functionality of the method.
+Processes a message.
+Reads a token from the given token.
+Parse the string message.
+Inserts the specified element into the queue.
+Runs this test from the command line.
+Serializes an object.
+Runs the test case.
+Log the given output stream.
+Checks if the given character is a string.
+Sets the attributes for the given property.
+Process the http post request.
+Creates a new instance.
+Initializes the configuration file.
+Initialize the view.
+Returns true if the given object is equal to this object.
+Constructs a new <code>authenticatexception</code> with the specified detail message.
+Returns true if the signature is a valid signature.
+Invoked when the mouse is clicked.
+Handle an event.
+Serializes the given element.
+Fires a <code>propertychangelistener</code> with the specified property.
+Creates a new instance.
+Close an element.
+Creates a new instance.
+Returns true if the given device is a valid password.
+Returns true if the given string is a valid token.
+Returns a string representation of this object.
+Converts a byte array to a byte array.
+Constructs a <code>text</code>.
+Returns a string representation of this object.
+Returns true if the specified object is equal.
+Returns true if the given token is valid.
+This method is called when a statement has been created.
+This method is called when a method is called.
+Performs the action.
+Clears the cache.
+Ensures that the next time is the same as the next time.
+Returns a string representation of this object.
+Removes the specified element from the cache.
+Marks the current position.
+Creates a new exception with the specified detail message.
+Encodes a byte array into base64 notation.
+Creates a new instance.
+Creates a new index for the given index.
+Returns the string representation of the specified string.
+Create a positive number from a positive number.
+Destroys the specified resource.
+This method will be called when a file has been loaded.
+Returns true if the current row is not supported.
+Receive notification of the end of an element.
+Returns a list of keys in the map.
+Test for <code>getinstance(provider provider)</code> method assertion: throws an exception.
+Creates a file.
+Evaluates the given algorithm.
+Creates a new instance.
+Constructs a new <code>object</code> object.
+Returns a hash code for this object.
+Creates a new instance.
+Returns true if the connection has been closed.
+Returns true if this property is a valid property.
+Decode the base64 encoded string.
+Clears all the elements in the cache.
+Returns the position of the next point in the current position.
+Returns a string representation of this object.
+Constructs a new exception with the specified detail message.
+Returns <code>true</code>.
+Search for the given group.
+Creates a new instance.
+Put a list to the database.
+Creates a new node.
+Processes a notification.
+Creates a new instance.
+Logs an error message.
+Constructs a new exception with the specified detail message.
+Creates a new instance.
+Creates a new <code>reason</code> with the specified detail message.
+Returns a string representation of this period.
+Paints the border of the component.
+Creates a new instance.
+Creates a new instance.
+Creates a new instance.
+Receive notification of the start of an element.
+Initialise the service.
+Creates a new instance of this class.
+Creates a new instance.
+Process the next block.
+Convert a string to a string.
+Helper method to check whether the given pattern is a valid address.
+Returns the number of bits in the given range.
+Called when the view has changed.
+Remove a message from the given input stream.
+Sorts the specified array into ascending order.
+Creates a new instance of the class.
+Creates a new instance.
+Divide two numbers.
+Creates a new instance of the given node.
+Handles the event.
+Reset the cache.
+string) for a positive number.
+Reset the current state to the output stream.
+Deep clone.
+Runs the test case.
+Returns true if the given string is a string.
+Called when the activity is clicked.
+Returns the number of bytes in the buffer.
+Creates a new instance.
+Creates a new instance.
+Returns true if the given file is a file.
+Test for <code>getinstance()</code> method.
+Wraps a key.
+Handles the event.
+Convert a string to a string.
+Returns true if the given date is a date.
+Deletes a key.
+Constructs a new <code>sqlexception</code> with the specified detail message.
+Returns true if the given property is valid.
+Creates a new file.
+Increments the number of characters in the current position.
+Creates a new instance of the given class.
+Returns true if the file is valid.
+Runs the test case.
+This method is used to create a new instance.
+Fires a property that can be used for the specified property.
+Returns a string representation of this object.
+Creates a new instance.
+Inserts a row in the current row.
+Removes all elements from the specified collection.
+Ensures that the specified array contains the same size.
+Paints the border of the component.
+Creates a new instance.
+Displays an error message.
+Returns the next token in the current position.
+Adds an attribute to the attribute.
