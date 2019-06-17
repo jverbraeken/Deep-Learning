@@ -6,7 +6,7 @@ from keras.preprocessing.text import text_to_word_sequence
 
 from preprocess.parser import get_data_as_lists
 
-
+# method to create vocabularies on the train data
 def get_train_vocabularies(train_data):
     x = train_data[0]
     y = train_data[1]
@@ -16,14 +16,14 @@ def get_train_vocabularies(train_data):
     code_vocab.filter_extremes(no_below=5, keep_tokens=['pad'])
 
     comment_vocab = Dictionary(y)
-    comment_vocab.filter_extremes(no_below=5, keep_tokens=["bos", "eos", "pad", "ood"])
+    comment_vocab.filter_extremes(no_below=5, keep_tokens=["bos", "eos", "ood"])
     return code_vocab, comment_vocab
 
-
+# method to tokenize a string
 def tokenize_string(string_sequences):
     return [text_to_word_sequence(sequence) for sequence in string_sequences]
 
-
+# method to get word embedding vectors
 def get_word_embedding(documents, embedding_size=100, window_size=10, epochs=10):
     model = Word2Vec(
         documents,
@@ -34,7 +34,7 @@ def get_word_embedding(documents, embedding_size=100, window_size=10, epochs=10)
     model.train(documents, total_examples=len(documents), epochs=epochs)
     return model.wv
 
-
+# method to create weights used in keras embedding layer
 def get_embedding_weights(vocab, word_embedding_location=None, **kwargs):
     if (word_embedding_location is not None):
         word_embedding = KeyedVectors.load(word_embedding_location, mmap='r')
@@ -49,7 +49,7 @@ def get_embedding_weights(vocab, word_embedding_location=None, **kwargs):
             weights[id + 1] = word_embedding.get_vector(token)
     return weights
 
-
+# method to filter and pad input data
 def filter_and_pad(data, max_seq_length_code=100, max_seq_length_comment=50):
     x = data[0]
     y = data[1]
@@ -68,7 +68,7 @@ def filter_and_pad(data, max_seq_length_code=100, max_seq_length_comment=50):
     padded_y = [sequence + ['pad'] * (max_seq_length_comment - len(sequence)) for sequence in filtered_y]
     return padded_x, padded_y
 
-
+# method to encode a sequence into integer representations
 def encode_sequences(code_vocab, comment_vocab, data_x, data_y, max_seq_length_comment):
     encoded_x = np.array([code_vocab.doc2idx(sequence, unknown_word_index=0) for sequence in data_x])
     encoded_y = np.array([comment_vocab.doc2idx(sequence, unknown_word_index=0) for sequence in data_y])
@@ -84,27 +84,15 @@ def encode_sequences(code_vocab, comment_vocab, data_x, data_y, max_seq_length_c
 
     return encoded_x, encoded_y, decoder_target_data
 
-
-def get_train_input(max_seq_length_code=100, max_seq_length_comment=50):
-    data_train = get_data_as_lists()[0]
-    padded_x, padded_y = filter_and_pad(data_train, max_seq_length_code, max_seq_length_comment)
-
-    code_vocab, comment_vocab = get_train_vocabularies((padded_x, padded_y))
-
-    encoded_x, encoded_y, decoder_target_data = encode_sequences(code_vocab, comment_vocab, padded_x, padded_y,
-                                                                 max_seq_length_comment)
-
-    return encoded_x, encoded_y, decoder_target_data
-
-
+# method to create keras embedding layers
 def get_embedding_layers(data_train, max_seq_length_code=100, max_seq_length_comment=50,
                          embeddings_location_code="embeddings/code.model",
-                         embeddings_location_comment="embeddings/comment.model"):
+                         embeddings_location_comment="embeddings/comment.model", **kwargs):
 
     code_vocab, comment_vocab = get_train_vocabularies(
         filter_and_pad(data_train, max_seq_length_code, max_seq_length_comment))
-    weights_code = get_embedding_weights(vocab=code_vocab, word_embedding_location=embeddings_location_code)
-    weights_comment = get_embedding_weights(vocab=comment_vocab, word_embedding_location=embeddings_location_comment)
+    weights_code = get_embedding_weights(vocab=code_vocab, word_embedding_location=embeddings_location_code, **kwargs)
+    weights_comment = get_embedding_weights(vocab=comment_vocab, word_embedding_location=embeddings_location_comment, **kwargs)
     embedding_layer_code = Embedding(weights_code.shape[0],
                                      weights_code.shape[1],
                                      weights=[weights_code],
@@ -125,7 +113,5 @@ def get_embedding_layers(data_train, max_seq_length_code=100, max_seq_length_com
 if __name__ == '__main__':
     data_train = get_data_as_lists()[0]
     padded_x, padded_y = filter_and_pad(data_train, 100, 50)
-    weights_code = get_word_embedding(padded_x, embedding_size=100, window_size=10, epochs=10)
     weights_comment = get_word_embedding(padded_y, embedding_size=100, window_size=10, epochs=10)
-    weights_code.save("embeddings/code.model")
     weights_comment.save("embeddings/comment.model")
