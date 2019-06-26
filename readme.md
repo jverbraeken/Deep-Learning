@@ -1,4 +1,2 @@
-# To train and run the transformer
-run ```./generate_transformer_data.sh```
-
-run ```./train_transformer.sh```
+# To train and run the transformer, transformer /w preprocessing or LSTM (subwords)
+Look in the ```/notebooks``` folder to find three jupyter notebooks with instructions on how to run the models (take note that some functionality, like saving and loading from google Drive requires you to run the file via [Google Colab](https://colab.research.google.com).
